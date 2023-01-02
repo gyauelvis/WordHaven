@@ -1,0 +1,289 @@
+/* The style section for the banner image */
+.contactBanner {
+  height: calc(65vh - 8rem);
+  background-image: url(./img/pexels-fauxels-3184423.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #000000bf;
+  background-blend-mode: darken;
+  display: flex;
+  padding: 5rem 12rem;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: fixed;
+}
+/* Styles the get in touch text */
+.contactBanner h2 {
+  font-weight: 600;
+  line-height: 5rem;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+.contactBanner p {
+  color: white;
+  width: 60%;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 2rem;
+  text-align: left;
+  word-spacing: 0.2rem;
+}
+
+/* .contactBanner button {
+  background-color: none;
+} */
+
+/* main container of the we'd love to connect with you and the the text below */
+.pleasantry {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem 1rem 2rem;
+  font-family: "Raleway", sans-serif;
+}
+/* we'd love to connect with you text */
+.pleasantry p {
+  font-weight: 500;
+  line-height: 4rem;
+  font-size: 2.5rem;
+}
+/* The text right under the we'd love text */
+.pleasantry span {
+  font-weight: 400;
+  line-height: 3rem;
+  font-size: 1.2rem;
+}
+
+.pleasantry button {
+  color: #58181f;
+  font-weight: 500;
+  height: 3rem;
+  width: auto;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid #58181f;
+  background: none;
+  border-radius: 0.2rem;
+  margin: 2rem 0;
+  transition: background 300ms ease-in-out;
+  cursor: pointer;
+}
+
+/* Forms container */
+.contactForms form,
+.prayerRequest form {
+  line-height: 2.2rem;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
+  margin: 10px 10%;
+}
+
+.contactForms form input {
+  width: 50%;
+  border: 0px;
+  border-radius: 1rem;
+  line-height: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  padding: 0rem 1rem;
+  margin: 1rem 0;
+  background-color: rgb(209, 209, 209);
+  position: relative;
+}
+.contactForms form input::placeholder {
+  position: absolute;
+  top: 0;
+  padding: 1rem 0.2rem;
+  color: #000;
+}
+#message {
+  height: 10rem;
+}
+#submit {
+  background: #58181f;
+  color: #fff;
+  width: 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto;
+  font-size: x-large;
+  padding: 0.1rem 2.5rem;
+  border-radius: 0;
+  border: 2px solid #58181f;
+  border-radius: 1rem;
+  opacity: 0.85;
+  transition-duration: 300ms;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+}
+#submit:hover {
+  opacity: 1;
+}
+.prayerRequest {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.prayerRequest .container {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 25rem;
+  height: 20rem;
+  max-width: 30rem;
+  max-height: 25rem;
+  padding: 2rem 2rem;
+}
+.prayerRequest .prayerheader {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+.prayerRequest .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.prayerRequest .close {
+  display: flegrx;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.prayerRequest h2 {
+  font-size: 2.1rem;
+  margin: 0.5rem 0;
+}
+
+.prayerRequest .heading a {
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+.prayerRequest form input {
+  border: 2px solid #000;
+  border-radius: 0.3rem;
+  margin: 0.3rem 0;
+  height: 2.5rem;
+  width: 90%;
+}
+
+.prayerRequest form input::placeholder {
+  position: absolute;
+  top: 0;
+  padding: 0.7rem 0.2rem;
+  color: #000;
+}
+
+.prayerRequest form #messageP {
+  height: 5rem;
+}
+.prayerRequest form #submit {
+  width: 6rem;
+  height: 3rem;
+  font-size: large;
+}
+@media screen and (max-width: 900px) {
+  .contactBanner span {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: normal;
+  }
+  .contactBanner {
+    height: calc(100vh - 7rem);
+  }
+  .wrapper {
+    height: auto;
+  }
+  .pleasantry span {
+    text-align: center;
+  }
+  .prayerRequest {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0rem auto;
+  }
+  .prayerRequest h2 {
+    font-size: 1.6rem;
+    margin: 0.2rem 0;
+  }
+  .prayerRequest .container {
+    width: 75%;
+    height: 60%;
+  }
+  .prayerRequest form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .prayerRequest form input,
+  .contactForms form input {
+    width: 90%;
+    line-height: 3rem;
+    font-family: "lora", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .prayerRequest form #message {
+    height: 7rem;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .contactBanner span {
+    font-size: 5rem;
+  }
+  .contactBanner {
+    height: calc(60vh - 7rem);
+  }
+}
+@media screen and (max-height: 499px) {
+  .prayerRequest .container {
+    height: auto;
+  }
+  .prayerRequest {
+    top: 0%;
+  }
+}
+@media screen and (max-height: 450px) and (max-width: 900px) {
+  .prayerRequest .container {
+    width: 75%;
+    height: 80%;
+  }
+  .prayerRequest form input,
+  .contactForms form input {
+    width: 100%;
+    margin: 0.2rem 0;
+  }
+  .prayerRequest #messageP {
+    height: 4rem !important;
+  }
+  #submit {
+    margin: 0.5rem auto;
+  }
+}
