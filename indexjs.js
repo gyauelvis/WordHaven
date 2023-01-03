@@ -2,6 +2,8 @@ let hamburger = document.querySelector(".navBar .theBox .hamburger");
 let navLinks = document.querySelector(".navBar .navLinks");
 let closeMenu = document.querySelector(".navBar .closeMenu img");
 let navLinksUl = document.querySelector(".navBar .navLinks ul");
+let getSermonImg = document.querySelectorAll(".sermons .serMon .sermonImg");
+let getPlayIcon = document.querySelectorAll(".sermons .serMon .sermonImg img");
 const toggleOn = (e) => {
   e.preventDefault;
   navLinksUl.style.animation = "ul-in 250ms ease-in-out 0s 1 normal forwards";
@@ -40,3 +42,12 @@ values.forEach(function (value) {
 
 let pic_anim = document.querySelectorAll(".pic_anim");
 pic_anim.forEach((pic) => observer.observe(pic));
+
+// const hoverOnSermons = () => {
+//   getPlayIcon.forEach((icon) => {
+//     icon.style.backgroundColor = "#fff";
+//   });
+// };
+getSermonImg.forEach((sermonImg) => {
+  sermonImg.addEventListener("mouseover", hoverOnSermons);
+});

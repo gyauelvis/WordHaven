@@ -219,12 +219,12 @@ body {
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
-  background-image: url(./img/WordHaven.jpg);
+  background-image: url(./img/WordHaven4.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: darken;
   background-attachment: fixed;
 }
@@ -251,7 +251,7 @@ body {
   font-size: 1.5rem;
 }
 .mission .intro .Ourmission {
-  color: #a71d2d;
+  color: #740e1a;
   font-style: italic;
   width: 60%;
 }
@@ -322,30 +322,84 @@ body {
 .sermons {
   flex-direction: column;
   padding: 4rem 0;
-}
-.sermons div {
-  padding: 1rem 0;
-  flex-direction: row;
+  position: relative;
+  margin-bottom: 5.5rem;
 }
 .sermons,
-.sermons .sermonList {
+.sermons .sermonList,
+.serMon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+}
+.sermons .sermonList {
+  padding: 1rem 0;
+  flex-direction: row;
+  position: relative;
+  margin: 0 1rem;
+  width: 27vw;
+  height: 35vh;
+  position: relative;
+}
+.sermons .serMon .sermonImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.sermons .serMon .sermonImg1 {
+  background-image: url("./img/WordHavenPic0.JPG");
+}
+.sermons .serMon .sermonImg2 {
+  background-image: url("./img/WordHven3.JPG");
+}
+.sermons .serMon .sermonImg3 {
+  background-image: url("./img/WordHavenPic2.JPG");
+}
+.sermons .serMon .sermonImg img {
+  border-radius: 50%;
+  padding: 1rem;
+  border: 2px solid #fff;
+  transition: background 300ms ease-in-out;
+}
+.sermons .sermonList {
+  padding: 1rem 0;
+  flex-direction: row;
+  position: relative;
+  margin: 0 1rem;
+  width: 27vw;
 }
 .sermons h2 {
   font-size: xx-large;
+  padding: 3rem 0;
 }
-.sermonList div {
-  width: calc(35rem / 1.5);
-  height: calc(19.688rem / 1.2);
-  padding: 1rem 1rem;
+.sermons .serMon .sermonList .description,
+.sermons .serMon .sermonImg p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+  text-align: left;
 }
-.sermonList iframe {
-  width: calc(35rem / 1.5);
-  height: calc(19rem / 1.2);
-  padding: 1rem 0.5rem;
+.sermons .serMon .sermonImg p {
+  color: #fff;
+  font-weight: bold;
+
+  font-size: 1rem;
+  padding: 1rem;
+}
+.sermons .serMon .sermonList .description {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
+  padding: 1.5rem 0;
 }
 .remarks {
   background-image: url("./img/pexels-tara-winstead-8383671\ \(1\).jpg");
@@ -930,6 +984,6 @@ footer figure a img {
 .value {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(5\]0%);
+  transform: translateY(50%);
   transition: all 500ms ease-in-out;
 }
