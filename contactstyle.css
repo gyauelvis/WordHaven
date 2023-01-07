@@ -1,34 +1,32 @@
 /* The style section for the banner image */
 .contactBanner {
-  height: calc(65vh - 8rem);
+  height: calc(97vh - 8rem);
   background-image: url(./img/pexels-fauxels-3184423.jpg);
   background-position: center;
   background-size: cover;
   background-color: #000000bf;
   background-blend-mode: darken;
   display: flex;
-  padding: 5rem 12rem;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-attachment: fixed;
 }
 /* Styles the get in touch text */
 .contactBanner h2 {
   font-weight: 600;
-  line-height: 5rem;
+  line-height: 3rem;
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 3.5rem;
   padding: 1rem 0;
 }
-.contactBanner p {
-  color: white;
-  width: 60%;
-  font-size: 1.5rem;
-  font-family: "Raleway", sans-serif;
-  line-height: 2rem;
-  text-align: left;
-  word-spacing: 0.2rem;
+.contactBanner figure {
+  display: flex;
+  flex-direction: row;
+}
+.icons {
+  margin: 1.5rem 0.5rem;
 }
 
 /* .contactBanner button {
@@ -98,11 +96,13 @@
   margin: 1rem 0;
   background-color: rgb(209, 209, 209);
   position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
+
 .contactForms form input::placeholder {
   position: absolute;
   top: 0;
-  padding: 1rem 0.2rem;
+  padding: 1.4rem 0.1rem;
   color: #000;
 }
 #message {
@@ -164,7 +164,7 @@
   justify-content: center;
 }
 .prayerRequest .close {
-  display: flegrx;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
@@ -209,15 +209,28 @@
     text-align: center;
     line-height: normal;
   }
+  .contactBanner h2 {
+    font-size: 1rem;
+  }
   .contactBanner {
     height: calc(100vh - 7rem);
   }
   .wrapper {
     height: auto;
   }
+  /* .pleasantry {
+    padding: 5rem 1rem 1rem 1rem;
+  } */
+  .pleasantry p {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+  }
   .pleasantry span {
     text-align: center;
   }
+
   .prayerRequest {
     position: absolute;
     top: 0;

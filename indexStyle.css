@@ -130,7 +130,8 @@ body {
   font-weight: 500;
   line-height: 5rem;
 }
-.bannerHeader div a img {
+.bannerHeader div a img,
+.contactBanner .icons {
   width: 2rem;
   height: 2rem;
   background-color: #e8e8e8;
@@ -147,12 +148,13 @@ body {
   color: #e8e8e8;
   padding: 0.5rem 0.5rem;
   margin: 2rem 0;
+  background-color: initial;
   transition: background 300ms ease-in-out;
   cursor: pointer;
 }
 .bannerHeader div button:hover,
 .pleasantry button:hover,
-.contactBanner button {
+.contactBanner button:hover {
   background-color: hsl(353, 57%, 22%);
   color: #e8e8e8;
 }
@@ -162,10 +164,12 @@ body {
   line-height: 2rem;
   padding: 1.5rem 0;
 }
-.bannerHeader .icons {
+.bannerHeader .icons,
+.contactBanner .icons {
   transition: background 300ms ease-in-out;
 }
-.bannerHeader .icons:hover {
+.bannerHeader .icons:hover,
+.contactBanner .icons:hover {
   opacity: 0.8;
 }
 .lilIntro {
@@ -383,6 +387,7 @@ body {
   font-size: xx-large;
   padding: 3rem 0;
 }
+
 .sermons .serMon .sermonList .description,
 .sermons .serMon .sermonImg p {
   font-family: "Open Sans", sans-serif;
@@ -392,7 +397,6 @@ body {
 .sermons .serMon .sermonImg p {
   color: #fff;
   font-weight: bold;
-
   font-size: 1rem;
   padding: 1rem;
 }
@@ -610,14 +614,21 @@ footer figure a img {
       display: none;
     }
   }
+  .bannerHeader {
+    height: calc(100vh);
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken;
+    width: 100%;
+    background-attachment: fixed;
+  }
   .bannerHeader div {
-    font-size: 2.5rem;
-    line-height: 2rem;
+    font-size: 2.5rem !important;
+    text-align: center;
   }
   .bannerHeader div span {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     line-height: 2rem;
-    padding: 1.5rem 0;
+    padding: 1rem 0 !important;
   }
   .mission {
     padding: 6rem 0 2rem 0;
@@ -634,7 +645,26 @@ footer figure a img {
   .sermons div {
     flex-direction: column;
   }
-
+  .sermons .sermonList {
+    padding: 1rem 0;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1rem 0rem 0;
+    width: 85vw;
+    height: 50vh;
+  }
+  .sermons .serMon .sermonImg {
+    width: 100%;
+    height: 60%;
+  }
+  .sermons .serMon .sermonList .description,
+  .sermons .serMon .sermonImg p {
+    text-align: center;
+  }
+  .sermons .serMon .sermonList .description {
+    font-size: 1.2rem;
+    padding: 1.2rem 0;
+  }
   .remarks div button {
     padding: 1rem;
     font-size: x-large;
