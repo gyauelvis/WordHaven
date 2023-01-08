@@ -172,6 +172,7 @@ body {
 .contactBanner .icons:hover {
   opacity: 0.8;
 }
+
 .lilIntro {
   padding: 4rem;
   display: flex;
@@ -184,12 +185,14 @@ body {
   padding: 1.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
+/* We are WordHaven Ministry International Church */
 .lilIntro div h2 {
   display: block;
   font-size: 1.5rem;
   line-height: 3rem;
   font-family: "Raleway", sans-serif;
 }
+/* WordHaven Ministry International Church  */
 .lilIntro div h2 span,
 .service_sections h2 {
   display: block;
@@ -234,7 +237,7 @@ body {
 }
 /* Div containing the as a family of God and everything ending with we do that through */
 .mission .intro {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", sans-serif;
   line-height: 5rem;
   font-size: 1.2rem;
   text-align: center;
@@ -246,7 +249,6 @@ body {
 }
 /* As a family of God text */
 .mission .intro span {
-  font-family: "Raleway", sans-serif;
   font-size: 3rem;
   text-align: center;
   color: #fff;
@@ -262,7 +264,7 @@ body {
   color: #fff;
   font-style: italic;
   width: 60%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .values {
   padding: 4rem 4rem;
