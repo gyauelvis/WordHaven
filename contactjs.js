@@ -28,14 +28,18 @@ let ungetPrayerRequestForm = (e) => {
 };
 close.addEventListener("click", ungetPrayerRequestForm);
 
-let getFormEmail = document.querySelector("#email");
-
-getFormEmail.addEventListener("blur", (e) => {
-  if (e.target.value.indexOf("@") === -1) {
-    e.target.style.border = "none";
-    e.target.style.outline = "2px solid red";
-  } else {
-    e.target.style.border = "1px solid rgba(0,0,0,0.75)";
-    e.target.style.outline = "none";
-  }
+let getFormEmails = document.querySelectorAll(".email");
+getFormEmails.forEach((email) => {
+  email.addEventListener("blur", (e) => {
+    let getEmailValue = e.target.value;
+    let emailRegex = /.+@.+\..+/;
+    if (getEmailValue === "") {
+    } else {
+      if (!emailRegex.test(getEmailValue)) {
+        e.target.style.border = "1px solid red";
+      } else {
+        e.target.style.border = "1px solid rgba(0, 0, 0, 0.5)";
+      }
+    }
+  });
 });

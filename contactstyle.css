@@ -99,6 +99,7 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+
 .contactForms form input::placeholder {
   position: absolute;
   top: 0;
