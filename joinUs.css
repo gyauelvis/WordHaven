@@ -1,22 +1,26 @@
 body {
   scroll-behavior: smooth;
 }
-.bannerHeader-event {
+.joinUsPageHero {
   background-image: url(./img/WordHaven.jpg);
+  height: calc(100vh - 8rem);
+  width: 100%;
+}
+.joinUsPageHero,
+.bringTheKids {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 8rem);
-  background-color: rgba(0, 0, 0, 0.85);
-  background-blend-mode: darken;
-  width: 100%;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-blend-mode: darken;
 }
-.bannerHeader-event h1 {
+.joinUsPageHero h1,
+.bringTheKids h2 {
   font-size: 4.5rem;
   color: #fff;
   font-family: "Lora", sans-serif;
@@ -24,12 +28,36 @@ body {
   font-weight: 700;
 }
 
-.bannerHeader-event p {
+.joinUsPageHero p {
   font-size: 2rem;
-  color: #fff;
   font-family: "Lora", sans-serif;
   line-height: 5rem;
   color: #a71d2d;
+}
+.joinUsPageHero .icons {
+  margin: 0 0.5rem;
+}
+.welcomeToChurch div h2 span {
+  display: inline;
+}
+/* Bring Your Kids Sections */
+.bringTheKids {
+  background-image: url(./img/WordHaven-BringYourKids.jpg);
+  height: 80vh;
+}
+.bringTheKids div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bringTheKids p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2rem;
+  margin: 2rem 10vw;
+  text-align: center;
 }
 .service_sections {
   display: flex;

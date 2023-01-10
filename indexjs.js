@@ -35,7 +35,7 @@ const observer = new IntersectionObserver(function (entries) {
       entry.target.style.transition = `all 500ms ease-in-out ${entry.target.dataset.delay}`;
     } else {
       entry.target.style.opacity = "0";
-      entry.target.style.transform = "translateY(40%)";
+      entry.target.style.transform = "translateY(50%)";
       entry.target.style.filter = "blur(5px)";
       entry.target.style.transition = `all 500ms ease-in-out ${entry.target.dataset.delay}`;
     }
@@ -44,7 +44,6 @@ const observer = new IntersectionObserver(function (entries) {
 values.forEach((value) => {
   observer.observe(value);
 });
-
 let pic_anim = document.querySelectorAll(".pic_anim");
 pic_anim.forEach((pic) => observer.observe(pic));
 

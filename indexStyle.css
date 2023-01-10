@@ -131,7 +131,8 @@ body {
   line-height: 5rem;
 }
 .bannerHeader div a img,
-.contactBanner .icons {
+.contactBanner .icons,
+.joinUsPageHero .icons {
   width: 2rem;
   height: 2rem;
   background-color: #e8e8e8;
@@ -165,11 +166,13 @@ body {
   padding: 1.5rem 0;
 }
 .bannerHeader .icons,
-.contactBanner .icons {
+.contactBanner .icons,
+.joinUsPageHero .icons {
   transition: background 300ms ease-in-out;
 }
 .bannerHeader .icons:hover,
-.contactBanner .icons:hover {
+.contactBanner .icons:hover,
+.joinUsPageHero .icons:hover {
   opacity: 0.8;
 }
 
@@ -253,6 +256,7 @@ body {
   text-align: center;
   color: #fff;
 }
+
 /* All the ps including we do that throug and the mission itself */
 .mission .intro p {
   line-height: 2.5rem;
