@@ -91,6 +91,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
+.service-info2.service-div {}
+
+.service-info2.service-div {}
+
+.service-info2.service-div {}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -106,7 +112,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  /* line-height: 1; */
   padding: 0;
   margin: 0;
   background-color: #fff;

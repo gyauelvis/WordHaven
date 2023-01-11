@@ -7,7 +7,8 @@ body {
   width: 100%;
 }
 .joinUsPageHero,
-.bringTheKids {
+.bringTheKids,
+.service-information {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: darken;
 }
 .joinUsPageHero h1,
@@ -33,6 +34,7 @@ body {
   font-family: "Lora", sans-serif;
   line-height: 5rem;
   color: #a71d2d;
+  text-shadow: 2px 3px 5px #000;
 }
 .joinUsPageHero .icons {
   margin: 0 0.5rem;
@@ -59,52 +61,28 @@ body {
   margin: 2rem 10vw;
   text-align: center;
 }
-.service_sections {
+/* The Service Information Sections */
+.service-information {
+  height: 90vh;
+  background-image: url(./img/WordHavenPic0.JPG);
+}
+.service {
   display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  margin: 2rem 5vw;
-  position: relative;
-  width: 80vw;
 }
-.service_sections {
-  flex-direction: column;
-  margin: 2rem 5vw;
+.service-div {
+  margin: 1rem;
+  background-color: #ffffff;
+  width: 25vw;
+  padding: 1rem;
+  box-shadow: -5px -8px 4px rgb(5, 5, 5);
 }
-.service_sections h2 {
-  font-weight: 600;
-  line-height: 5rem;
-  font-family: "Raleway", sans-serif;
-  color: #58181f;
-  font-size: 3.5rem;
-  padding: 3rem 0 1.5rem 0rem;
+
+.service-info1 {
+  height: 45vh;
 }
-.service_divs {
-  flex-direction: row;
-  margin: 0 auto;
-  flex-direction: row;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-}
-.servSec {
-  display: flex;
-  flex-direction: column;
-  width: 33%;
-  border: 1px solid #58181f;
-  border-radius: 0.3rem;
-  margin: 0px 1rem;
-  padding: 1rem 1rem;
-}
-.servSec h3 {
-  font-family: "Lora", sans-serif;
-  font-size: 1.3rem;
-  padding: 1rem 0;
-}
-.servSec p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  padding: 0;
+.service-info2 {
+  height: 40vh;
 }
