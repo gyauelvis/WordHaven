@@ -62,17 +62,34 @@ body {
   text-align: center;
 }
 /* The Service Information Sections */
-.service-information {
-  height: 90vh;
-  background-image: url(./img/WordHavenPic0.JPG);
-}
-.service {
+.serviceTime,
+.serviceTime-div1 {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
   justify-content: center;
 }
-.service-div {
+.serviceTime {
+  flex-direction: column;
+  height: 95vh;
+  align-items: center;
+}
+.serviceTime-div1 {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.serviceTime .serviceTime-div1 div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-direction: column;
+  width: 20vw;
+  height: 19vh;
+}
+.serviceTime .serviceTime-div1 div img {
+  width: 20.5rem;
+  height: 18rem;
+}
+/* .service-div {
   margin: 1rem;
   background-color: #ffffff;
   width: 25vw;
@@ -85,4 +102,8 @@ body {
 }
 .service-info2 {
   height: 40vh;
-}
+} */
+/* ,
+.serviceTime div{
+  display: flex;
+} */
