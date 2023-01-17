@@ -197,7 +197,8 @@ body {
 }
 /* WordHaven Ministry International Church  */
 .lilIntro div h2 span,
-.service_sections h2 {
+.service_sections h2,
+.serviceTime h2 {
   display: block;
   font-size: 3rem;
   line-height: 3rem;

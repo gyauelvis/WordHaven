@@ -65,30 +65,43 @@ body {
 .serviceTime,
 .serviceTime-div1 {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .serviceTime {
+  height: 90vh;
   flex-direction: column;
-  height: 95vh;
-  align-items: center;
 }
 .serviceTime-div1 {
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
-.serviceTime .serviceTime-div1 div {
+.serviceTime-div1 div {
   display: flex;
-  justify-content: space-evenly;
-  align-items: left;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
-  width: 20vw;
-  height: 19vh;
+  padding: 1rem 1rem;
+}
+.serviceTime h2 {
+  padding: 2rem 0;
+}
+.serviceTime-div1 div a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: x-large;
+  padding: 0.2rem 0;
+}
+.serviceTime-div1 div p {
+  font-family: "Lora", sans-serif;
+  font-size: large;
+  line-height: 1.5rem;
 }
 .serviceTime .serviceTime-div1 div img {
   width: 20.5rem;
   height: 18rem;
 }
+
 /* .service-div {
   margin: 1rem;
   background-color: #ffffff;
