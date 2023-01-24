@@ -101,22 +101,50 @@ body {
   width: 20.5rem;
   height: 18rem;
 }
-
-/* .service-div {
-  margin: 1rem;
-  background-color: #ffffff;
-  width: 25vw;
-  padding: 1rem;
-  box-shadow: -5px -8px 4px rgb(5, 5, 5);
+@media screen and (max-width: 912px) {
+  .joinUsPageHero h1,
+  .bringTheKids h2 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  .joinUsPageHero p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+  }
+  .welcomeToChurch,
+  .serviceTime,
+  .churchOnline {
+    padding: 3rem 0;
+  }
+  .serviceTime-div1 {
+    flex-direction: column;
+  }
+  .serviceTime {
+    height: auto;
+    flex-direction: column;
+  }
 }
-
-.service-info1 {
-  height: 45vh;
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .joinUsPageHero h1,
+  .bringTheKids h2 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  .joinUsPageHero p {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 2rem 0;
+    margin: 0 2rem;
+  }
+  .serviceTime-div1 div {
+    justify-content: center;
+  }
+  .serviceTime-div1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
-.service-info2 {
-  height: 40vh;
-} */
-/* ,
-.serviceTime div{
-  display: flex;
-} */
