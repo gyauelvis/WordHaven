@@ -744,6 +744,7 @@ footer figure a img {
   }
   footer {
     flex-direction: column;
+    flex-wrap: wrap;
   }
   footer .foot {
     flex-direction: column;
@@ -920,7 +921,8 @@ footer figure a img {
   }
 
   footer {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   footer .foot {
     flex-direction: column;
