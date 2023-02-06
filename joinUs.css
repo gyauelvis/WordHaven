@@ -101,7 +101,7 @@ body {
   width: 20.5rem;
   height: 18rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
   .joinUsPageHero h1,
   .bringTheKids h2 {
     font-size: 2.2rem;
@@ -146,21 +146,39 @@ body {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  .serviceTime {
-    height: 90vh;
-    flex-direction: column;
+  .welcomeToChurch {
+    padding: 2rem 0;
+    margin: 0 0 2rem 0;
   }
   .serviceTime {
+    height: auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
   }
+
   .serviceTime-div1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+@media screen and (min-width: 720px) and (max-width: 800px) {
+  .serviceTime .serviceTime-div1 div img {
+    width: 22rem;
+    height: 19rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 850px) {
   .serviceTime .serviceTime-div1 div img {
     width: 23rem;
     height: 19rem;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1000px) {
+  .serviceTime .serviceTime-div1 div img {
+    width: 26rem;
+    height: 20rem;
   }
 }
