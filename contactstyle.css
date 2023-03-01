@@ -12,6 +12,9 @@
   justify-content: center;
   background-attachment: fixed;
   filter: none;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
