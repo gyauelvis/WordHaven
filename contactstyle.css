@@ -12,6 +12,10 @@
   justify-content: center;
   background-attachment: fixed;
   filter: none;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -ms-filter: blur(0px);
