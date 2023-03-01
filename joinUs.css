@@ -19,6 +19,11 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: darken;
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 .joinUsPageHero h1,
 .bringTheKids h2 {
