@@ -101,16 +101,16 @@ body {
   z-index: 5000;
 }
 .bannerHeader {
-  background-image: url(./img/man-2179326_960_720.jpg);
+  background-image: url(./img/homebg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 6rem);
-  /* background-color: rgba(0, 0, 0, 0.75);
-  background-blend-mode: darken; */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
   width: 100%;
   background-attachment: fixed;
-  filter: none;
+  /* filter: none;
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
@@ -121,7 +121,7 @@ body {
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -ms-filter: blur(0px);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); */
 }
 
 .bannerHeader div {
