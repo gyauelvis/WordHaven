@@ -106,8 +106,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 6rem);
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: darken;
+  /* background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken; */
   width: 100%;
   background-attachment: fixed;
   /* filter: none;
