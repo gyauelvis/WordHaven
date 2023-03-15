@@ -221,9 +221,6 @@ body {
 }
 
 .mission {
-  background-attachment: fixed;
-}
-.mission {
   padding: 3rem 0 0rem 0;
   display: flex;
   flex-direction: column;
@@ -648,6 +645,7 @@ footer figure a img {
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
+    background-attachment: scroll;
   }
   .mission .intro p {
     line-height: 2rem;
