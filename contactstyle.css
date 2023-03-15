@@ -11,18 +11,6 @@
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
-  filter: none;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 /* Styles the get in touch text */
 .contactBanner h2 {
@@ -226,6 +214,7 @@
   }
   .contactBanner {
     height: calc(100vh - 7rem);
+    background-attachment: scroll;
   }
   .wrapper {
     height: auto;

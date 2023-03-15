@@ -110,18 +110,6 @@ body {
   background-blend-mode: darken;
   width: 100%;
   background-attachment: fixed;
-  /* filter: none;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); */
 }
 
 .bannerHeader div {
@@ -439,7 +427,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-attachment: fixed;
+  /* Background attachment:fixed isn't support in safari mobile  */
+  background-attachment: scroll;
 }
 .remarks div {
   font-family: "Lora", sans-serif;
