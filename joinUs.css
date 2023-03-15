@@ -114,6 +114,11 @@ body {
   height: 18rem;
 }
 @media screen and (max-width: 699px) {
+  .joinUsPageHero,
+  .bringTheKids,
+  .service-information {
+    background-attachment: scroll;
+  }
   .joinUsPageHero h1,
   .bringTheKids h2 {
     font-size: 2.2rem;
